@@ -1,0 +1,69 @@
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+body {
+  background-color: #faf8f9;
+}
+
+.page-header {
+  font-size: small;
+  padding-bottom: 3em;
+}
+
+.page-header::before {
+  content: "";
+  width: 3em;
+  height: 5px;
+  background-color: #03a9f4;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 30px;
+  margin-inline: auto;
+  transition: width 100ms ease-in-out;
+}
+
+.page-header:hover::before {
+  width: 3em;
+}
+
+
+.img-cucina {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+}
+
+.margin-top {
+  margin-top: 1%;
+}
+
+.form-group {
+  margin-bottom: 5%;
+}
+
+
+.img-caption {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  font-size: x-small;
+}
+
+a:hover {
+  background: hsl(0deg 0% 100% / 66%);
+  opacity: .5;
+
+}
+
+.col {
+  position: relative;
+  height: fit-content;
+  padding: 0;
+  margin-inline: calc(var(--bs-gutter-x) * .5);
+}
